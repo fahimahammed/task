@@ -48,6 +48,7 @@ function App() {
         <table className="table table-striped table-hover table-bordered table-sm border-secondary mt-5">
           <thead>
             <tr className='text-center bg-secondary bg-gradient text-white'>
+              <th></th>
               <th scope="col">instrument_token</th>
               <th scope="col">exchange_token</th>
               <th scope="col">tradingsymbol</th>
