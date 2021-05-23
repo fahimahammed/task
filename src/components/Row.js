@@ -3,8 +3,8 @@ import React from 'react';
 const Row = ({data}) => {
     const { __EMPTY, instrument_token, exchange_token, tradingsymbol, name, last_price, expiry, strike, tick_size, lot_size, instrument_type, segment, exchange} = data;
     
-    const date = new Date(Math.round((expiry - 25569)*86400*1000));
-    let formattedDate = date.getDate() + "/"+ parseInt(date.getMonth()+1) +"/"+date.getFullYear();
+    const date = new Date(Math.round((expiry - 25569)*86400*1000));   //convert excel data to Date-Time
+    let formattedDate = date.getDate() + "/"+ parseInt(date.getMonth()+1) +"/"+date.getFullYear();     //Only get full Data
     
     //console.log(formattedDate);
     // console.log(date);
